@@ -27,10 +27,7 @@ public class BuscaAsyncTask extends AsyncTask<JSONObject, Void, Response> {
 
     @Override
     protected Response doInBackground(JSONObject... vetor) {
-        // TODO Auto-generated method stub
-
         Response response = null;
-
         JSONObject json = vetor[0];
 
         try {

@@ -21,9 +21,6 @@ import ifpb.edu.br.myapplication.bruno.interfaces.NomesInterface;
 
 public class MainActivity extends Activity implements TextWatcher, NomesInterface {
 
-    // Define o tamanho mínimo do texto para consulta no servidor.
-    private static int TAMANHO_MINIMO_TEXTO = 4;
-
     private EditText nomeEditText;
     List<String> nomes;
     ArrayAdapter<String> adapter;
@@ -65,7 +62,7 @@ public class MainActivity extends Activity implements TextWatcher, NomesInterfac
 
         try {
 
-            if (nome.length() >= TAMANHO_MINIMO_TEXTO) {
+            if (nome.length() >= 1) {
                 JSONObject json = new JSONObject();
                 json.put("fullName", nome);
                 BuscaAsyncTask buscarNomeAsyncTask = new BuscaAsyncTask(this);
