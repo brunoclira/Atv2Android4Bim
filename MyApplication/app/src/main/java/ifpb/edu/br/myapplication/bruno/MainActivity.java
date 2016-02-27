@@ -16,6 +16,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.ifpb.myapplication.R;
 import ifpb.edu.br.myapplication.bruno.interfaces.NomesInterface;
 
 public class MainActivity extends Activity implements TextWatcher, NomesInterface {
@@ -65,13 +66,10 @@ public class MainActivity extends Activity implements TextWatcher, NomesInterfac
         try {
 
             if (nome.length() >= TAMANHO_MINIMO_TEXTO) {
-                // JSON
                 JSONObject json = new JSONObject();
                 json.put("fullName", nome);
-
                 BuscaAsyncTask buscarNomeAsyncTask = new BuscaAsyncTask(this);
                 buscarNomeAsyncTask.execute(json);
-                // Adicionar ao ListView.
                 nomes.add(nome);
                 adapter.notifyDataSetChanged();
             } else {
