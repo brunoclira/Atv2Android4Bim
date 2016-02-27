@@ -40,7 +40,6 @@ public class MainActivity extends Activity implements TextWatcher, NomesInterfac
         adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, nomes);
 
         nomesListView.setAdapter(adapter);
-
     }
 
     @Override

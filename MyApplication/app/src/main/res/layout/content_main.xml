@@ -33,5 +33,5 @@
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/editTextWatch"
         android:layout_alignParentTop="true"
-        android:text="Listar Usuarios" />
+        android:text="@string/nome" />
 </LinearLayout>

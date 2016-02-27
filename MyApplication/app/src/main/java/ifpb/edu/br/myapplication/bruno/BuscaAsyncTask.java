@@ -12,9 +12,9 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import ifpb.edu.br.interfaces.NomesInterface;
-import ifpb.edu.br.util.HttpService;
-import ifpb.edu.br.util.Response;
+import ifpb.edu.br.myapplication.bruno.interfaces.NomesInterface;
+import ifpb.edu.br.myapplication.bruno.util.HttpService;
+import ifpb.edu.br.myapplication.bruno.util.Response;
 
 public class BuscaAsyncTask extends AsyncTask<JSONObject, Void, Response> {
     public static final String TAG = "BuscaAsyncTask";
